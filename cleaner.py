@@ -1,0 +1,5 @@
+text = open("TSLA.csv", "r")
+text = ''.join([i for i in text]).replace("-", "/")
+x = open("TSLA_clean.csv","w")
+x.writelines(text)
+x.close()
